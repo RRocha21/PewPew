@@ -48,6 +48,22 @@ sub {
     -o-transform: scale(0.9);
 }
 
+.players_left_container>.player_container>.bottom_bar>.weapon_icon {
+    transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
+}
+
+.players_right_container>.player_container>.bottom_bar>.weapon_icon {
+    transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
+}
+
 @keyframes chickenIn {
     0% {
         opacity: 0;
@@ -1640,14 +1656,15 @@ sub {
 }
 
 .players_left_container>.player_container>.bottom_bar>.weapon_icon {
-    position: absolute;
-    top: 15px;
-    left: 15px;
+    position: relative;
+    top: 10px;
+    left: 0px;
     height: 28px;
     width: 130px;
 }
 
 .players_left_container>.player_container>.bottom_bar>.weapon_icon img {
+    float: left;
     max-width: 90%;
     max-height: 90%;
 }
@@ -1946,21 +1963,6 @@ sub {
     max-height: 100%;
     margin-right: 4px;
     filter: invert(80%);
-}
-
-.players_right_container>.player_container>.bottom_bar>.weapon_icon {
-    position: absolute;
-    top: 15px;
-    left: 25px;
-    height: 28px;
-    width: 130px;
-}
-
-.players_right_container>.player_container>.bottom_bar>.weapon_icon img {
-    max-width: 100%;
-    max-height: 100%;
-    margin-right: 4px;
-    transform: scaleX(-1);
 }
 
 
