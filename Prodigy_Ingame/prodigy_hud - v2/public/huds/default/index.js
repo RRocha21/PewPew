@@ -9,12 +9,14 @@ var start_money = {};
 var wl_teama = "";
 var wl_teamb = "";
 
+
+
 var map1 = "vertigo"; // Map 1 Name
 var map2 = "dust2"; // Map 2 Name
 var map3 = "inferno"; // Map 3 Name
 var map4 = ""; // Map 4 Name
 var map5 = ""; // Map 5 Name
-var playing = "2" // Values: 1-5
+var playing = "3" // Values: 1-5
 var pick = "DECIDER"; // Current map pick
 
 var swappicksides = 0;
@@ -28,7 +30,7 @@ var map2_res2 = 2;
 var map3_res1 = 11;
 var map3_res2 = 1;
 
-var bo = 3;
+var bo = 1;
 
 var flag_replays = 1;
 
@@ -164,7 +166,7 @@ function fillObserved(player) {
         $(".observed_container>.observed_bar>.kda_container>.assists>.a").css("color", "rgb(" + ct_color + ")");
         $(".observed_container>.observed_bar>.kda_container>.deaths>.d").css("color", "rgb(" + ct_color + ")");
         $(".observed_container>.health").css("color", "rgb(" + ct_color + ")");
-        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(50, 50, 50) 0%, rgb(" + ct_color + ") 200px, rgb(" + ct_color + ") 100%");
+        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(65, 65, 65) 0%, rgb(" + ct_color + ") 200px, rgb(" + ct_color + ") 100%");
         $(".observed_container>.life_container>.life_bar").css("width", statistics.health + "%");
         $(".observed_container>.bomb_defuse").html(statistics.defusekit ? $("<img width='25px' />").attr("src", "/files/img/elements/defuse.png") : "");
         //$(".observed_container>.name").css("color", "rgb(" + ct_color + ")");
@@ -182,7 +184,7 @@ function fillObserved(player) {
         $(".observed_container>.observed_bar>.kda_container>.assists>.a").css("color", "rgb(" + ct_color + ")");
         $(".observed_container>.observed_bar>.kda_container>.deaths>.d").css("color", "rgb(" + ct_color + ")");
         $(".observed_container>.health").css("color", "rgb(" + ct_color + ")");
-        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(50, 50, 50) 0%, rgb(" + ct_color + ") 200px, rgb(" + ct_color + ") 100%");
+        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(65, 65, 65) 0%, rgb(" + ct_color + ") 200px, rgb(" + ct_color + ") 100%");
         $(".observed_container>.life_container>.life_bar").css("width", statistics.health + "%");
         $(".observed_container>.bomb_defuse").html(statistics.defusekit ? $("<img width='25px' />").attr("src", "/files/img/elements/defuse.png") : "");
         //$(".observed_container>.name").css("color", "rgb(" + ct_color + ")");
@@ -199,7 +201,7 @@ function fillObserved(player) {
         $(".observed_container>.observed_bar>.kda_container>.kills>.k").css("color", "rgb(" + t_color + ")");
         $(".observed_container>.observed_bar>.kda_container>.assists>.a").css("color", "rgb(" + t_color + ")");
         $(".observed_container>.observed_bar>.kda_container>.deaths>.d").css("color", "rgb(" + t_color + ")");
-        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(50, 50, 50) 0%, rgb(" + t_color + ") 200px, rgb(" + t_color + ") 100%");
+        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(65, 65, 65) 0%, rgb(" + t_color + ") 200px, rgb(" + t_color + ") 100%");
         $(".observed_container>.life_container>.life_bar").css("width", statistics.health + "%");
         //$(".observed_container>.name").css("color", "rgb(" + t_color + ")");
         $(".observed_container>.health").css("color", "rgb(" + t_color + ")");
@@ -216,7 +218,7 @@ function fillObserved(player) {
         $(".observed_container>.observed_bar>.kda_container>.kills>.k").css("color", "rgb(" + t_color + ")");
         $(".observed_container>.observed_bar>.kda_container>.assists>.a").css("color", "rgb(" + t_color + ")");
         $(".observed_container>.observed_bar>.kda_container>.deaths>.d").css("color", "rgb(" + t_color + ")");
-        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(50, 50, 50) 0%, rgb(" + t_color + ") 200px, rgb(" + t_color + ") 100%");
+        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(65, 65, 65) 0%, rgb(" + t_color + ") 200px, rgb(" + t_color + ") 100%");
         $(".observed_container>.life_container>.life_bar").css("width", statistics.health + "%");
         $(".observed_container>.bomb_defuse").html(statistics.bomb ? $("<img width='25px' />").attr("src", "/files/img/elements/defuse.png") : "");
         $(".observed_container>.health").css("color", "rgb(" + t_color + ")");
@@ -876,6 +878,7 @@ function updatePage(data) {
     var map = data.map();
     var previously = data.previously();
 
+    var map3 = map.name.slice(3);
     var round_now = map.round + (round.phase == "over" || round.phase == "intermission" ?
         0 :
         1);
@@ -2031,9 +2034,9 @@ function updatePage(data) {
                 showSpam();
                 showBonus();
                 if (bo == 1) {
-                    //showPickem();
-                    //$(".map_picks>.first_map").css("opacity", "0");
-                    //$(".map_picks>.second_map").css("opacity", "0");
+                    showPickem();
+                    $(".map_picks>.first_map").css("opacity", "0");
+                    $(".map_picks>.second_map").css("opacity", "0");
                 } else if (bo == 3) {
                     showPickem_1();
                     showPickem_2();

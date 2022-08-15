@@ -350,22 +350,22 @@ sub {
 
 .topbar_i_logo>.inner {
     position: absolute;
-    left: 0px;
-    top: -6px;
+    left: 7px;
+    top: 0px;
     width: 86px;
     height: 86px;
     z-index: 41;
 }
 
 .topbar_i_logo>.inner img {
-    width: 100px;
-    height: 100px;
+    width: 86px;
+    height: 86px;
 }
 
 .topbar_i_counter {
     /*background: url("/files/img/snow.gif");*/
     position: absolute;
-    left: 5px;
+    left: 20px;
     top: 0px;
     width: 140px;
     height: 86px;
@@ -430,7 +430,7 @@ sub {
     line-height: 1.2;
     position: absolute;
     left: 0px;
-    width: 65px;
+    width: 66px;
     text-align: center;
     bottom: 0px;
     z-index: 43;
@@ -450,7 +450,7 @@ sub {
     line-height: 1.95;
     letter-spacing: 2;
     position: absolute;
-    left: 55px;
+    left: 58px;
     z-index: 43;
     text-align: center;
     height: 56px;
@@ -467,7 +467,7 @@ sub {
     line-height: 1.2;
     position: absolute;
     right: 0px;
-    width: 65px;
+    width: 66px;
     text-align: center;
     bottom: 0px;
     z-index: 43;
@@ -2503,11 +2503,6 @@ sub {
     width: 33.333%;
     height: 100%;
     z-index: 100;
-    /* border-radius: 10px; */
-    /* -webkit-border-radius: 10px; */
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 
 .map_picks>.decider_map {
@@ -2515,16 +2510,12 @@ sub {
     background-position: center;
     background-size: 300px 169px;
     position: absolute;
-    left: 66.666%;
+    right: -20px;
     top: 0px;
-    width: 33.333%;
+    width: 270px;
     height: 100%;
     z-index: 50;
-    /* border-radius: 10px; */
-    /* -webkit-border-radius: 10px; */
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    clip-path: polygon(1% 0, 115% 0, 100% 100%, 11% 100%);
 }
 
 .map_picks>.first_map>.text_container {
@@ -2656,22 +2647,18 @@ sub {
 .map_picks>.decider_map>.text_container {
     position: absolute;
     /*background: rgba(0, 0, 0, 0.8); */
-    left: 10%;
-    top: 10%;
-    width: 80%;
-    height: 25%;
+    left: 25%;
+    top: 7%;
+    width: 50%;
+    height: 30%;
     text-align: center;
     color: rgb(255, 255, 255);
-    font-size: 16px;
+    font-size: 20px;
     font-family: "Edo SZ";
     z-index: 100;
     line-height: 1.7;
     z-index: 110;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    clip-path: polygon(0 0, 100% 0, 93% 100%, 7% 100%);
 }
 
 .map_picks>.decider_map>.text_container_2 {
@@ -2683,8 +2670,9 @@ sub {
     height: 25%;
     text-align: center;
     color: rgb(255, 255, 255);
-    font-size: 19px;
+    font-size: 23px;
     font-family: "HelveticaNowDisplay";
+    font-weight: 700;
     z-index: 100;
     line-height: 1.7;
     z-index: 110;
@@ -2699,13 +2687,14 @@ sub {
     position: absolute;
     /*background: rgba(0, 0, 0, 0.7);*/
     left: 10%;
-    top: 73%;
+    top: 77.5%;
     width: 80%;
     height: 25%;
     text-align: center;
     color: rgb(255, 255, 255);
-    font-size: 21px;
+    font-size: 25px;
     font-family: "HelveticaNowDisplay";
+    font-weight: 700;
     line-height: 1.2;
     z-index: 110;
     border-radius: 10px;
@@ -2817,7 +2806,6 @@ sub {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;*/
     /* border-bottom-left-radius: 10px; */
-    clip-path: polygon(0 0, 110% 0, 100% 100%, % 100%);
 }
 
 .right_bonus>.bonus_amount {
