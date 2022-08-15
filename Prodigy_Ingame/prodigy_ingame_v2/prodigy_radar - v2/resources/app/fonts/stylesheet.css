@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Industry Inc Base';
+    src: url('IndustryInc-Base.woff2') format('woff2'),
+        url('IndustryInc-Base.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tungsten';
+    src: url('Tungsten-Bold.woff2') format('woff2'),
+        url('Tungsten-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eurostile Extended';
+    src: url('EurostileExtended-Roman.woff2') format('woff2'),
+        url('EurostileExtended-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eurostile Extended';
+    src: url('EurostileExtended-Black.woff2') format('woff2'),
+        url('EurostileExtended-Black.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akira Expanded';
+    src: url('AkiraExpanded-SuperBold.woff2') format('woff2'),
+        url('AkiraExpanded-SuperBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Industry Inc Base';
+    src: url('IndustryInc-Base.woff2') format('woff2'),
+        url('IndustryInc-Base.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
