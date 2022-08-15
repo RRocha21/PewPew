@@ -49,19 +49,19 @@ sub {
 }
 
 .players_left_container>.player_container>.bottom_bar>.weapon_icon {
-    transform: scale(0.75);
-    -webkit-transform: scale(0.75);
-    -moz-transform: scale(0.75);
-    -ms-transform: scale(0.75);
-    -o-transform: scale(0.75);
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
 }
 
 .players_right_container>.player_container>.bottom_bar>.weapon_icon {
-    transform: scale(0.75);
-    -webkit-transform: scale(0.75);
-    -moz-transform: scale(0.75);
-    -ms-transform: scale(0.75);
-    -o-transform: scale(0.75);
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
 }
 
 @keyframes chickenIn {
@@ -367,7 +367,7 @@ sub {
 .topbar_i_logo>.inner {
     position: absolute;
     left: 7px;
-    top: 0px;
+    top: -2px;
     width: 86px;
     height: 86px;
     z-index: 41;
@@ -1561,12 +1561,12 @@ sub {
 }
 
 .players_left_container>.player_container>.top_bar>.player_name {
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Industry Inc Base";
     color: rgb(255, 255, 255);
     /* font-weight: bold; */
     text-transform: uppercase;
-    line-height: 1.6;
+    line-height: 1.9;
     text-align: left;
     position: absolute;
     left: 72px;
@@ -1656,9 +1656,9 @@ sub {
 }
 
 .players_left_container>.player_container>.bottom_bar>.weapon_icon {
-    position: relative;
-    top: 10px;
-    left: 0px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
     height: 28px;
     width: 130px;
 }
@@ -1695,7 +1695,7 @@ sub {
     background-position: center;
     background-size: contain;
     position: absolute;
-    left: 12px;
+    left: 125px;
     top: 32px;
     z-index: 283;
     height: 16px;
@@ -1723,8 +1723,8 @@ sub {
     line-height: 1.4;
     text-align: left;
     position: absolute;
-    left: 32px;
-    top: 29px;
+    left: 145px;
+    top: 28px;
     z-index: 283;
     height: 20px;
     width: 45px;
@@ -1869,12 +1869,12 @@ sub {
 }
 
 .players_right_container>.player_container>.top_bar>.player_name {
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Industry Inc Base";
     color: rgb(255, 255, 255);
     /* font-weight: bold; */
     text-transform: uppercase;
-    line-height: 1.6;
+    line-height: 1.9;
     text-align: right;
     position: absolute;
     right: 72px;
@@ -1965,6 +1965,21 @@ sub {
     filter: invert(80%);
 }
 
+.players_right_container>.player_container>.bottom_bar>.weapon_icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 28px;
+    width: 130px;
+}
+
+.players_right_container>.player_container>.bottom_bar>.weapon_icon img {
+    float: right;
+    max-width: 90%;
+    max-height: 90%;
+    transform: scaleX(-1);
+}
+
 
 /** RIGHT SIDE - MONEY & STATS **/
 
@@ -1991,7 +2006,7 @@ sub {
     background-position: center;
     background-size: contain;
     position: absolute;
-    right: 74px;
+    right: 125px;
     top: 32px;
     z-index: 283;
     height: 16px;
@@ -2019,8 +2034,8 @@ sub {
     line-height: 1.4;
     text-align: right;
     position: absolute;
-    right: 95px;
-    top: 29px;
+    right: 145px;
+    top: 28px;
     z-index: 283;
     height: 20px;
     width: 45px;
@@ -5485,7 +5500,7 @@ sup {
 }
 
 .replays {
-    width: 50% !important;
+    width: 55% !important;
 }
 
 .dead_replays {

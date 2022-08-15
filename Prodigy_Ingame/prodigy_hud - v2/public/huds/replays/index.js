@@ -152,7 +152,7 @@ function fillObserved(player) {
     $(".observed_container>.observed_bar>.kda_container>.deaths>.d").html("D <font color='#fff'>" + statistics.deaths + "</font>");
 
     obs_player_name = player.name;
-    if (obs_player_name.length > 13) obs_player_name = obs_player_name.substring(0, 10);
+    if (obs_player_name.length > 12) obs_player_name = obs_player_name.substring(0, 12);
     $(".observed_container>.name").html(obs_player_name);
 
     $("#nades").html("");
@@ -576,9 +576,9 @@ function fillPlayer(player, nr, side, max) {
     //PLAYER KILLS AND DEATHS
 
     if (statistics.round_kills > 0) {
-        $bottom.find(".k").html(statistics.kills + "<sup> (" + statistics.round_kills + ")</sup>");
+        $bottom.find(".k").html(statistics.round_kills);
     } else {
-        $bottom.find(".k").html(statistics.kills);
+        $bottom.find(".k").html(statistics.round_kills);
     }
 
     $bottom.find(".d").text(statistics.deaths);
@@ -627,7 +627,7 @@ function fillPlayer(player, nr, side, max) {
     if (player.observer_slot <= 5) {
 
         player_name = player.name;
-        if (player_name.length > 13) player_name = player_name.substring(0, 10);
+        if (player_name.length > 12) player_name = player_name.substring(0, 12);
         $top.find(".player_name").html(player_name.split(" ").join(""));
 
         $player.find(".number").html(player.observer_slot);
@@ -662,7 +662,9 @@ function fillPlayer(player, nr, side, max) {
         }
 
     } else if (player.observer_slot < 10) {
-        $top.find(".player_name").html(player.name.split(" ").join(""));
+        player_name = player.name;
+        if (player_name.length > 12) player_name = player_name.substring(0, 12);
+        $top.find(".player_name").html(player_name.split(" ").join(""));
 
         $player.find(".number").html(player.observer_slot);
 
@@ -695,9 +697,9 @@ function fillPlayer(player, nr, side, max) {
         r_team_value = r_team_value + statistics.money;
 
     } else if (player.observer_slot == 10) {
-
-
-        $top.find(".player_name").html(player.name.split(" ").join(""));
+        player_name = player.name;
+        if (player_name.length > 12) player_name = player_name.substring(0, 12);
+        $top.find(".player_name").html(player_name.split(" ").join(""));
 
         $player.find(".number").html("0");
 
@@ -759,30 +761,28 @@ function fillPlayer(player, nr, side, max) {
         let view = "";
         let type = weapon.type;
 
-        if (type != "C4" && type != "Knife") {
-            view += weapon.state == "active" ? "checked" : "";
-            if (type == "Grenade") {
-                for (let x = 0; x < weapon.ammo_reserve; x++) {
-                    $bottom.find(".grenades").append($("<img />").attr("src", "/files/img/grenades/weapon_" + name + ".png").addClass(view));
-                }
-            } else if (type) {
-                view += side == "right" ? " img-hor" : "";
-                if (type == "Pistol") {
-
-                    if (side == "right") {
-                        $top.find(".weapon_icon").prepend($("<img />").attr("src", "/files/img/weapons/" + name + ".png").addClass("invert").addClass(view));
-                    } else {
-                        $top.find(".weapon_icon").prepend($("<img align='right' />").attr("src", "/files/img/weapons/" + name + ".png").addClass("invert").addClass(view));
+        if (weapon.state == "active") {
+            if (type != "C4" && type != "Knife") {
+                view += weapon.state == "active" ? "checked" : "";
+                if (type == "Grenade") {
+                    for (let x = 0; x < weapon.ammo_reserve; x++) {
+                        $bottom.find(".weapon_icon").append($("<img />").attr("src", "/files/img/grenades/weapon_" + name + ".png").addClass(view));
                     }
-
-                } else {
-
-                    if (side == "right") {
-                        $bottom.find(".weapon_icon").prepend($("<img />").attr("src", "/files/img/weapons/" + name + ".png").addClass("invert").addClass(view));
+                } else if (type) {
+                    view += side == "right" ? " img-hor" : "";
+                    if (type == "Pistol") {
+                        if (side == "right") {
+                            $bottom.find(".weapon_icon").prepend($("<img />").attr("src", "/files/img/weapons/" + name + ".png").addClass("invert").addClass(view));
+                        } else {
+                            $bottom.find(".weapon_icon").prepend($("<img align='right' />").attr("src", "/files/img/weapons/" + name + ".png").addClass("invert").addClass(view));
+                        }
                     } else {
-                        $bottom.find(".weapon_icon").prepend($("<img align='right' />").attr("src", "/files/img/weapons/" + name + ".png").addClass("invert").addClass(view));
+                        if (side == "right") {
+                            $bottom.find(".weapon_icon").prepend($("<img />").attr("src", "/files/img/weapons/" + name + ".png").addClass("invert").addClass(view));
+                        } else {
+                            $bottom.find(".weapon_icon").prepend($("<img align='right' />").attr("src", "/files/img/weapons/" + name + ".png").addClass("invert").addClass(view));
+                        }
                     }
-
                 }
             }
         }
