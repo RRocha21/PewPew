@@ -158,7 +158,7 @@ sub {
     height: 71px;
     z-index: 2;
     /*background: url("/files/img/snow.gif");*/
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(0, 0, 0, 0.90);
     opacity: 1;
     overflow: hidden;
     /*border-radius: 20px;
@@ -166,7 +166,7 @@ sub {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     -webkit-border-radius: 20px;*/
-    clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
 }
 
 .win_container>.bg_container>.text {
@@ -267,7 +267,7 @@ sub {
     height: 22px;
     opacity: 0;
     /*border-radius: 10px;*/
-    background: #fff;
+    background: rgba(0, 0, 0, 0.85);
     transform: translate(0px, -50px);
     -webkit-mask-image: linear-gradient(to left, black 0%, black 100%);
     /*-webkit-border-radius: 10px;
@@ -329,8 +329,8 @@ sub {
 
 .topbar_i_logo {
     position: absolute;
-    background: rgba(0, 0, 0, 0.7);
-    background-image: url(../../files/img/hud_elements/logo.png);
+    background: rgba(0, 0, 0, 0.85);
+    /*background-image: url(../../files/img/hud_elements/logo.png);*/
     background-size: 70px;
     background-repeat: no-repeat;
     background-position: center;
@@ -348,10 +348,24 @@ sub {
     /* border-bottom-right-radius: 20px; */
 }
 
+.topbar_i_logo>.inner {
+    position: absolute;
+    left: 7px;
+    top: 0px;
+    width: 86px;
+    height: 86px;
+    z-index: 41;
+}
+
+.topbar_i_logo>.inner img {
+    width: 86px;
+    height: 86px;
+}
+
 .topbar_i_counter {
     /*background: url("/files/img/snow.gif");*/
     position: absolute;
-    left: 5px;
+    left: 20px;
     top: 0px;
     width: 140px;
     height: 86px;
@@ -402,7 +416,7 @@ sub {
     height: 30px;
     text-align: center;
     line-height: 1.3;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.85);
     /*border-top-right-radius: 10px;
     border-top-left-radius: 10px; */
 }
@@ -416,11 +430,11 @@ sub {
     line-height: 1.2;
     position: absolute;
     left: 0px;
-    width: 70px;
+    width: 66px;
     text-align: center;
     bottom: 0px;
     z-index: 43;
-    height: 56px;
+    height: 52px;
     text-shadow: 0px 0px 10px rgb(0 0 0 / 30%), 0px -5px 35px rgb(0 0 0 / 30%);
     background: blue;
     /*rder-bottom-right-radius: 10px;*/
@@ -436,7 +450,7 @@ sub {
     line-height: 1.95;
     letter-spacing: 2;
     position: absolute;
-    left: 55px;
+    left: 58px;
     z-index: 43;
     text-align: center;
     height: 56px;
@@ -453,11 +467,11 @@ sub {
     line-height: 1.2;
     position: absolute;
     right: 0px;
-    width: 70px;
+    width: 66px;
     text-align: center;
     bottom: 0px;
     z-index: 43;
-    height: 56px;
+    height: 52px;
     text-shadow: 0px 0px 10px rgb(0 0 0 / 30%), 0px -5px 35px rgb(0 0 0 / 30%);
     /* border-bottom-right-radius: 10px; */
     /*border-bottom-left-radius: 35px; */
@@ -516,7 +530,7 @@ sub {
     position: absolute;
     left: -25px;
     top: -1px;
-    width: 450px;
+    width: 446px;
     height: 82px;
     z-index: 20;
     /*border-radius: 20px;
@@ -540,7 +554,7 @@ sub {
     position: absolute;
     right: -25px;
     top: -1px;
-    width: 450px;
+    width: 446px;
     height: 82px;
     z-index: 20;
     /*border-radius: 20px;
@@ -573,7 +587,7 @@ sub {
 }
 
 .header_container>.left_inner {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.85);
     position: absolute;
     left: -25px;
     top: -1px;
@@ -589,7 +603,7 @@ sub {
 }
 
 .header_container>.right_inner {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.85);
     position: absolute;
     right: -25px;
     top: -1px;
@@ -605,9 +619,9 @@ sub {
 }
 
 .header_container>.center_inner {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 1);
     position: absolute;
-    left: 395px;
+    left: 396px;
     top: 0px;
     width: 200px;
     height: 86px;
@@ -850,7 +864,7 @@ sub {
     background: #000;
     /*background: url("/files/img/snow.gif");
 */
-    opacity: 0.7;
+    opacity: 0.9;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -944,7 +958,7 @@ sub {
 .alerts_container>.right>.background {
     background: #000;
     /* background: url("/files/img/snow.gif"); */
-    opacity: 0.65;
+    opacity: 0.9;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -1031,7 +1045,7 @@ sub {
     background-repeat: no-repeat;
     position: absolute;
     left: 700px;
-    top: 866px;
+    top: 840px;
     width: 515px;
     height: 150px;
     z-index: 208;
@@ -1075,22 +1089,26 @@ sub {
 .observed_container>.bomb_defuse {
     position: absolute;
     left: 475px;
-    top: 26px;
+    top: 25px;
     z-index: 281;
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
 }
 
 .observed_container>.life_container {
     position: absolute;
     z-index: 55;
     width: 62%;
-    height: 15%;
-    top: 43%;
+    height: 19%;
+    top: 41%;
     left: 35%;
     background-color: rgba(0, 0, 0, 0.8);
-    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
     transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
 }
 
 .observed_container>.life_container>.life_bar {
@@ -1100,7 +1118,7 @@ sub {
     height: 100%;
     top: 0%;
     left: 0%;
-    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
     transition: all 0.4s ease-in-out 0s;
 }
 
@@ -1280,16 +1298,17 @@ sub {
 }
 
 .observed_container>.health {
-    font-size: 25px;
+    font-size: 22px;
     font-family: "Akira Expanded";
     color: rgb(255, 255, 255);
     position: absolute;
     left: 185px;
-    top: 62px;
+    top: 63px;
     width: 45px;
     text-overflow: clip;
     text-align: left;
     z-index: 57;
+    line-height: 1.3;
 }
 
 .observed_container>.armor {
@@ -1421,11 +1440,6 @@ sub {
     font-weight: 800;
     line-height: 1.05;
     z-index: 314;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
 
 .players_left_container>.player_container {
@@ -1733,11 +1747,6 @@ sub {
     font-weight: 800;
     line-height: 1.05;
     z-index: 314;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
 
 .players_right_container>.player_container {
@@ -1754,7 +1763,7 @@ sub {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;*/
-    clip-path: polygon(0 0, 110% 0, 100% 100%, 9% 100%);
+    clip-path: polygon(0 0, 115% 0, 100% 100%, 9% 100%);
     /* clip-path: polygon(-100% 0, 100% 0, 91% 100%, 0 100%); */
 }
 
@@ -2422,21 +2431,33 @@ sub {
 
 .sponsor {
     position: absolute;
-    background: rgba(0, 0, 0, 0.8);
-    background-image: url(../../files/img/Sem-Titulo-1.png);
+    background: rgba(0, 0, 0, 0.85);
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
     left: 700px;
     bottom: 0px;
     width: 515px;
-    height: 56px;
-    z-index: 500;
+    height: 60px;
     /*border-top-left-radius: 15px;
     border-top-right-radius: 15px;*/
     /* border-top-left-radius: 35px; */
     /* border-top-right-radius: 35px; */
     /* clip-path: polygon(13% 0%, 87% 0%, 95% 100%, 5% 100%); */
+}
+
+.sponsor>.inner {
+    position: absolute;
+    left: 78px;
+    top: 2px;
+    width: 360px;
+    height: 55px;
+    z-index: 505;
+}
+
+.sponsor>.inner img {
+    width: 360px;
+    height: 55px;
 }
 
 .map_picks {
@@ -2482,11 +2503,6 @@ sub {
     width: 33.333%;
     height: 100%;
     z-index: 100;
-    /* border-radius: 10px; */
-    /* -webkit-border-radius: 10px; */
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 
 .map_picks>.decider_map {
@@ -2494,16 +2510,12 @@ sub {
     background-position: center;
     background-size: 300px 169px;
     position: absolute;
-    left: 66.666%;
+    right: -20px;
     top: 0px;
-    width: 33.333%;
+    width: 270px;
     height: 100%;
     z-index: 50;
-    /* border-radius: 10px; */
-    /* -webkit-border-radius: 10px; */
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    clip-path: polygon(1% 0, 115% 0, 100% 100%, 11% 100%);
 }
 
 .map_picks>.first_map>.text_container {
@@ -2635,22 +2647,18 @@ sub {
 .map_picks>.decider_map>.text_container {
     position: absolute;
     /*background: rgba(0, 0, 0, 0.8); */
-    left: 10%;
-    top: 10%;
-    width: 80%;
-    height: 25%;
+    left: 25%;
+    top: 7%;
+    width: 50%;
+    height: 30%;
     text-align: center;
     color: rgb(255, 255, 255);
-    font-size: 16px;
+    font-size: 20px;
     font-family: "Edo SZ";
     z-index: 100;
     line-height: 1.7;
     z-index: 110;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    clip-path: polygon(0 0, 100% 0, 93% 100%, 7% 100%);
 }
 
 .map_picks>.decider_map>.text_container_2 {
@@ -2662,8 +2670,9 @@ sub {
     height: 25%;
     text-align: center;
     color: rgb(255, 255, 255);
-    font-size: 19px;
+    font-size: 23px;
     font-family: "HelveticaNowDisplay";
+    font-weight: 700;
     z-index: 100;
     line-height: 1.7;
     z-index: 110;
@@ -2678,13 +2687,14 @@ sub {
     position: absolute;
     /*background: rgba(0, 0, 0, 0.7);*/
     left: 10%;
-    top: 73%;
+    top: 77.5%;
     width: 80%;
     height: 25%;
     text-align: center;
     color: rgb(255, 255, 255);
-    font-size: 21px;
+    font-size: 25px;
     font-family: "HelveticaNowDisplay";
+    font-weight: 700;
     line-height: 1.2;
     z-index: 110;
     border-radius: 10px;
@@ -2796,7 +2806,6 @@ sub {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;*/
     /* border-bottom-left-radius: 10px; */
-    clip-path: polygon(0 0, 110% 0, 100% 100%, % 100%);
 }
 
 .right_bonus>.bonus_amount {
@@ -5187,12 +5196,6 @@ sub {
     -webkit-filter: grayscale(0.4);
 }
 
-.dead_replays {
-    opacity: 50% !important;
-    filter: grayscale(0.4);
-    -webkit-filter: grayscale(0.4);
-}
-
 .dead_name_left {
     transition: all 0.5s ease 0s !important;
     transform: translate(-60px, 0px) !important;
@@ -5482,4 +5485,10 @@ sup {
 
 .replays {
     width: 48% !important;
+}
+
+.dead_replays {
+    opacity: 50% !important;
+    filter: grayscale(0.4);
+    -webkit-filter: grayscale(0.4);
 }
