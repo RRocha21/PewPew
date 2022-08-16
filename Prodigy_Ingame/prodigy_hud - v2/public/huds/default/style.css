@@ -158,7 +158,8 @@ sub {
     height: 71px;
     z-index: 2;
     /*background: url("/files/img/snow.gif");*/
-    background: rgba(0, 0, 0, 0.90);
+    /*background: rgba(0, 0, 0, 0.90);*/
+    background-image: url(../../files/img/hud_elements/back.png);
     opacity: 1;
     overflow: hidden;
     /*border-radius: 20px;
@@ -267,7 +268,7 @@ sub {
     height: 22px;
     opacity: 0;
     /*border-radius: 10px;*/
-    background: rgba(0, 0, 0, 0.85);
+    background-image: url(../../files/img/hud_elements/back.png);
     transform: translate(0px, -50px);
     -webkit-mask-image: linear-gradient(to left, black 0%, black 100%);
     /*-webkit-border-radius: 10px;
@@ -329,8 +330,8 @@ sub {
 
 .topbar_i_logo {
     position: absolute;
-    background: rgba(0, 0, 0, 0.85);
-    background-size: 70px;
+    background-image: url(../../files/img/hud_elements/back_left.png);
+    background-size: 100%;
     /*background-image: url("../../files/img/hud_elements/logo_prodigies.png");*/
     background-repeat: no-repeat;
     background-position: center;
@@ -417,7 +418,7 @@ sub {
     height: 30px;
     text-align: center;
     line-height: 1.3;
-    background: rgba(0, 0, 0, 0.85);
+    background-image: url(../../files/img/hud_elements/back.png);
     /*border-top-right-radius: 10px;
     border-top-left-radius: 10px; */
 }
@@ -588,7 +589,7 @@ sub {
 }
 
 .header_container>.left_inner {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-image: url(../../files/img/hud_elements/back_left.png);
     position: absolute;
     left: -25px;
     top: -1px;
@@ -604,7 +605,7 @@ sub {
 }
 
 .header_container>.right_inner {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-image: url(../../files/img/hud_elements/back.png);
     position: absolute;
     right: -25px;
     top: -1px;
@@ -620,7 +621,7 @@ sub {
 }
 
 .header_container>.center_inner {
-    background-color: rgba(0, 0, 0, 1);
+    background-image: url(../../files/img/hud_elements/back.png);
     position: absolute;
     left: 396px;
     top: 0px;
@@ -862,7 +863,7 @@ sub {
 }
 
 .alerts_container>.left>.background {
-    background: #000;
+    background-image: url(../../files/img/hud_elements/back_left.png);
     /*background: url("/files/img/snow.gif");
 */
     opacity: 0.9;
@@ -957,7 +958,7 @@ sub {
 }
 
 .alerts_container>.right>.background {
-    background: #000;
+    background-image: url(../../files/img/hud_elements/back_left.png);
     /* background: url("/files/img/snow.gif"); */
     opacity: 0.9;
     position: absolute;
@@ -1041,8 +1042,8 @@ sub {
 /* OBSERVED PLAYER */
 
 .observed_container {
-    background: url("../../files/img/hud_elements/observed_bg.png");
-    background-size: contain;
+    background-image: url("../../files/img/hud_elements/observed_bg.png");
+    background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
     left: 700px;
@@ -1050,7 +1051,7 @@ sub {
     width: 515px;
     height: 150px;
     z-index: 208;
-    border: solid 2px #fff;
+    /*border: solid 2px #fff;*
     /*border-radius: 20px;
     -webkit-mask-image: linear-gradient(to left, transparent 5%, black 10%, black 90%, transparent 95%);
     -webkit-border-radius: 10%;
@@ -1277,7 +1278,7 @@ sub {
 }
 
 .observed_container>.bullets_icon {
-    background-image: url("/files/img/bullets.png");
+    background-image: url("/files/img/bullets_ct.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1453,7 +1454,7 @@ sub {
     border-bottom-right-radius: 25px;
     transition: filter 0.5s ease 0.0s;
     transition: opacity 0.5s ease 0.0s;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 80%, transparent 100%);
+    background-image: url(../../files/img/hud_elements/back_left.png);
     clip-path: polygon(-100% 0, 100% 0, 91% 100%, 0 100%);
 }
 
@@ -1751,7 +1752,7 @@ sub {
 }
 
 .players_right_container>.player_container {
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.7) 80%, transparent 100%);
+    background-image: url(../../files/img/hud_elements/back.png);
     background-position: right;
     width: 330px;
     height: 84px;
@@ -2045,9 +2046,9 @@ sub {
 /** SPAM **/
 
 .spam>.left_container {
-    background: url(../../files/img/hud_elements/observed_bg.png);
+    background-image: url(../../files/img/hud_elements/back_left.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     position: absolute;
     left: -214px;
@@ -2055,7 +2056,6 @@ sub {
     width: 369px;
     height: 60px;
     z-index: 9;
-    border: 2.5px solid rgb(48, 140, 244);
     transform: translate(0px, 135px);
     opacity: 0;
     /*border-radius: 10px;
@@ -2242,9 +2242,9 @@ sub {
 /* SPAM - RIGHT CONTAINER */
 
 .spam>.right_container {
-    background: url(../../files/img/hud_elements/observed_bg.png);
+    background-image: url(../../files/img/hud_elements/back.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     position: absolute;
     right: -214px;
@@ -2252,7 +2252,6 @@ sub {
     width: 369px;
     height: 60px;
     z-index: 9;
-    border: 2.5px solid #fff;
     transform: translate(0px, 135px);
     opacity: 0;
     /*border-radius: 10px;*/
@@ -2432,8 +2431,8 @@ sub {
 
 .sponsor {
     position: absolute;
-    background: rgba(0, 0, 0, 0.85);
-    background-size: 80%;
+    background-image: url(../../files/img/hud_elements/back.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     left: 700px;
@@ -2711,7 +2710,7 @@ sub {
     right: 22px;
     width: 200px;
     height: 55px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(../../files/img/hud_elements/back.png);
     opacity: 0;
     z-index: 1;
     /*border-radius: 10px;
@@ -2838,7 +2837,7 @@ sub {
     height: 55px;
     opacity: 0;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(../../files/img/hud_elements/back_left.png);
     /*border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -3198,7 +3197,7 @@ sub {
     left: 740px;
     width: 440px;
     height: 75px;
-    background-color: rgba(3, 16, 35, 0.9);
+    background-image: url(../../files/img/hud_elements/back_left.png);
     z-index: 100;
     /*border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -5186,7 +5185,7 @@ sub {
 }
 
 .observed {
-    background: #fff !important;
+    background-image: url(../../files/img/hud_elements/back.png) !important;
     box-shadow: 0px 0px 21px 3px #fff;
 }
 

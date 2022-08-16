@@ -174,7 +174,7 @@ sub {
     height: 71px;
     z-index: 2;
     /*background: url("/files/img/snow.gif");*/
-    background: rgba(0, 0, 0, 0.90);
+    background-image: url(../../files/img/hud_elements/back.png);
     opacity: 1;
     overflow: hidden;
     /*border-radius: 20px;
@@ -345,9 +345,9 @@ sub {
 
 .topbar_i_logo {
     position: absolute;
-    background: rgba(0, 0, 0, 0.85);
+    background-image: url(../../files/img/hud_elements/back.png);
     /*background-image: url(../../files/img/hud_elements/logo.png);*/
-    background-size: 70px;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     right: 0px;
@@ -432,7 +432,7 @@ sub {
     height: 30px;
     text-align: center;
     line-height: 1.3;
-    background: rgba(0, 0, 0, 0.85);
+    background-image: url(../../files/img/hud_elements/back.png);
     /*border-top-right-radius: 10px;
     border-top-left-radius: 10px; */
 }
@@ -603,7 +603,7 @@ sub {
 }
 
 .header_container>.left_inner {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-image: url(../../files/img/hud_elements/back_left.png);
     position: absolute;
     left: -25px;
     top: -1px;
@@ -619,7 +619,7 @@ sub {
 }
 
 .header_container>.right_inner {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-image: url(../../files/img/hud_elements/back.png);
     position: absolute;
     right: -25px;
     top: -1px;
@@ -635,7 +635,7 @@ sub {
 }
 
 .header_container>.center_inner {
-    background-color: rgba(0, 0, 0, 1);
+    background-image: url(../../files/img/hud_elements/back.png);
     position: absolute;
     left: 396px;
     top: 0px;
@@ -1057,7 +1057,7 @@ sub {
 
 .observed_container {
     background: url("../../files/img/hud_elements/observed_bg.png");
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
     left: 700px;
@@ -2447,8 +2447,8 @@ sub {
 
 .sponsor {
     position: absolute;
-    background: rgba(0, 0, 0, 0.85);
-    background-size: 80%;
+    background-image: url(../../files/img/hud_elements/back.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     left: 700px;

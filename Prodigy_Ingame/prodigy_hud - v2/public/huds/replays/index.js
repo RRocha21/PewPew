@@ -34,8 +34,8 @@ var bo = 1;
 
 var flag_replays = 1;
 
-var t_color = "219, 53, 55";
-var ct_color = "0, 179, 189";
+var t_color = "229, 16, 27";
+var ct_color = "0, 199, 209";
 var dark_ct_color = "0, 0, 0";
 var dark_t_color = "0, 0, 0";
 
@@ -175,8 +175,11 @@ function fillObserved(player) {
         $(".sponsor").css("border", "solid 2px rgb(" + ct_color + ")");
         $(".sponsor").css("box-shadow", "inset 0px 0px 20px 5px rgb(" + ct_color + ")");
         //$(".observed_container>.observed_bar").css("background", "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(" + ct_color + ") 35%, rgb(" + ct_color + ") 65%, rgba(0, 0, 0, 0) 100%)");
-        $(".observed_container").css("background", "rgba(" + dark_ct_color + ", 0.85)");
+        $(".observed_container").css("background-image", "url(../../files/img/hud_elements/back.png)");
         //$(".observed_container>.observed_bar>.kda_container").css("background", "rgba(" + dark_ct_color + ", 0.7)");
+
+        $(".observed_container>.bullets_icon").css("background-image", "url(/files/img/bullets_ct.png)");
+        $(".armor_icon").html(statistics.helmet ? $("<img  width='23px' />").attr("src", "/files/img/helmet_ct.png") : statistics.armor >= 0 ? $("<img  width='23px' />").attr("src", "/files/img/shield_ct.png") : "");
 
     } else if (player.team == "CT" && teams.right.side == "ct") {
 
@@ -184,7 +187,7 @@ function fillObserved(player) {
         $(".observed_container>.observed_bar>.kda_container>.assists>.a").css("color", "rgb(" + ct_color + ")");
         $(".observed_container>.observed_bar>.kda_container>.deaths>.d").css("color", "rgb(" + ct_color + ")");
         $(".observed_container>.health").css("color", "rgb(" + ct_color + ")");
-        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(65, 65, 65) 0%, rgb(" + ct_color + ") 200px, rgb(" + ct_color + ") 100%");
+        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(" + ct_color + ") 200px, rgb(" + ct_color + ") 100%");
         $(".observed_container>.life_container>.life_bar").css("width", statistics.health + "%");
         $(".observed_container>.bomb_defuse").html(statistics.defusekit ? $("<img width='25px' />").attr("src", "/files/img/elements/defuse.png") : "");
         //$(".observed_container>.name").css("color", "rgb(" + ct_color + ")");
@@ -193,15 +196,19 @@ function fillObserved(player) {
         $(".sponsor").css("border", "solid 2px rgb(" + ct_color + ")");
         $(".sponsor").css("box-shadow", "inset 0px 0px 20px 5px rgb(" + ct_color + ")");
         //$(".observed_container>.observed_bar").css("background", "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(" + ct_color + ") 35%, rgb(" + ct_color + ") 65%, rgba(0, 0, 0, 0) 100%)");
-        $(".observed_container").css("background", "rgba(" + dark_ct_color + ", 0.85)");
+        $(".observed_container").css("background-image", "url(../../files/img/hud_elements/back.png)");
         //$(".observed_container>.observed_bar>.kda_container").css("background", "rgba(" + dark_ct_color + ", 0.7)");
+
+        $(".observed_container>.bullets_icon").css("background-image", "url(/files/img/bullets_ct.png)");
+        $(".armor_icon").html(statistics.helmet ? $("<img  width='23px' />").attr("src", "/files/img/helmet_ct.png") : statistics.armor >= 0 ? $("<img  width='23px' />").attr("src", "/files/img/shield_ct.png") : "");
+
 
     } else if (player.team == "T" && teams.left.side == "t") {
 
         $(".observed_container>.observed_bar>.kda_container>.kills>.k").css("color", "rgb(" + t_color + ")");
         $(".observed_container>.observed_bar>.kda_container>.assists>.a").css("color", "rgb(" + t_color + ")");
         $(".observed_container>.observed_bar>.kda_container>.deaths>.d").css("color", "rgb(" + t_color + ")");
-        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(65, 65, 65) 0%, rgb(" + t_color + ") 200px, rgb(" + t_color + ") 100%");
+        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(" + t_color + ") 200px, rgb(" + t_color + ") 100%");
         $(".observed_container>.life_container>.life_bar").css("width", statistics.health + "%");
         //$(".observed_container>.name").css("color", "rgb(" + t_color + ")");
         $(".observed_container>.health").css("color", "rgb(" + t_color + ")");
@@ -210,15 +217,18 @@ function fillObserved(player) {
         $(".sponsor").css("border", "solid 2px rgb(" + t_color + ")");
         $(".sponsor").css("box-shadow", "inset 0px 0px 20px 5px rgb(" + t_color + ")");
         //$(".observed_container>.observed_bar").css("background", "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(" + t_color + ") 35%, rgb(" + t_color + ") 65%, rgba(0, 0, 0, 0) 100%)");
-        $(".observed_container").css("background", "rgba(" + dark_t_color + ", 0.85)");
+        $(".observed_container").css("background-image", "url(../../files/img/hud_elements/back.png)");
         //$(".observed_container>.observed_bar>.kda_container").css("background", "rgba(" + dark_t_color + ", 0.7)");
+
+        $(".observed_container>.bullets_icon").css("background-image", "url(/files/img/bullets_t.png)");
+        $(".armor_icon").html(statistics.helmet ? $("<img  width='23px' />").attr("src", "/files/img/helmet_t.png") : statistics.armor >= 0 ? $("<img  width='23px' />").attr("src", "/files/img/shield_t.png") : "");
 
     } else if (player.team == "T" && teams.right.side == "t") {
 
         $(".observed_container>.observed_bar>.kda_container>.kills>.k").css("color", "rgb(" + t_color + ")");
         $(".observed_container>.observed_bar>.kda_container>.assists>.a").css("color", "rgb(" + t_color + ")");
         $(".observed_container>.observed_bar>.kda_container>.deaths>.d").css("color", "rgb(" + t_color + ")");
-        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(65, 65, 65) 0%, rgb(" + t_color + ") 200px, rgb(" + t_color + ") 100%");
+        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(" + t_color + ") 200px, rgb(" + t_color + ") 100%");
         $(".observed_container>.life_container>.life_bar").css("width", statistics.health + "%");
         $(".observed_container>.bomb_defuse").html(statistics.bomb ? $("<img width='25px' />").attr("src", "/files/img/elements/defuse.png") : "");
         $(".observed_container>.health").css("color", "rgb(" + t_color + ")");
@@ -228,8 +238,11 @@ function fillObserved(player) {
         $(".sponsor").css("border", "solid 2px rgb(" + t_color + ")");
         $(".sponsor").css("box-shadow", "inset 0px 0px 20px 5px rgb(" + t_color + ")");
         //$(".observed_container>.observed_bar").css("background", "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(" + t_color + ") 35%, rgb(" + t_color + ") 65%, rgba(0, 0, 0, 0) 100%)");
-        $(".observed_container").css("background", "rgba(" + dark_t_color + ", 0.85)");
+        $(".observed_container").css("background-image", "url(../../files/img/hud_elements/back.png)");
         //$(".observed_container>.observed_bar>.kda_container").css("background", "rgba(" + dark_t_color + ", 0.7)");
+
+        $(".observed_container>.bullets_icon").css("background-image", "url(/files/img/bullets_t.png)");
+        $(".armor_icon").html(statistics.helmet ? $("<img  width='23px' />").attr("src", "/files/img/helmet_t.png") : statistics.armor >= 0 ? $("<img  width='23px' />").attr("src", "/files/img/shield_t.png") : "");
 
     }
 
@@ -257,7 +270,7 @@ function fillObserved(player) {
     $(".observed_container > .armor").html(statistics.armor);
     $(".observed_container > .health").html(statistics.health);
 
-    $(".armor_icon").html(statistics.helmet ? $("<img  width='23px' />").attr("src", "/files/img/helmet.png") : statistics.armor >= 0 ? $("<img  width='23px' />").attr("src", "/files/img/armor.png") : "");
+    //$(".armor_icon").html(statistics.helmet ? $("<img  width='23px' />").attr("src", "/files/img/helmet.png") : statistics.armor >= 0 ? $("<img  width='23px' />").attr("src", "/files/img/armor.png") : "");
 
 
 
@@ -547,13 +560,13 @@ function fillPlayer(player, nr, side, max) {
             $(".right_series").find(".block").css("border-color", "rgba(" + dark_ct_color + " ,1)");
             $(".right_series").find(".win").css("background", "rgba(" + ct_color + " ,1)");
             $(".right_series").find(".win").css("box-shadow", "rgba(" + dark_ct_color + ",1) 0px 0px 15px 3px");
-            $(".players_right_container>.player_container").css("background", "linear-gradient(to left, rgba(" + dark_ct_color + ", 0.9) 100%, transparent 100%)");
+            $(".players_right_container>.player_container").css("background-image", "url(../../files/img/hud_elements/back.png)");
         } else {
             health_color = "linear-gradient(-90deg, rgba(" + t_color + ", 0.3) 0px, rgba(" + t_color + ", 0.9) 143px, rgba(" + t_color + ", 1) 330px)";
             $(".right_series").find(".block").css("border-color", "rgba(" + dark_t_color + ",1)");
             $(".right_series").find(".win").css("background", "rgba(" + t_color + ",1)");
             $(".right_series").find(".win").css("box-shadow", "rgba(" + dark_t_color + ",1) 0px 0px 15px 3px");
-            $(".players_right_container>.player_container").css("background", "linear-gradient(to left, rgba(" + dark_t_color + ", 0.9) 100%, transparent 100%)");
+            $(".players_right_container>.player_container").css("background-image", "url(../../files/img/hud_elements/back.png)");
         }
     }
 
@@ -563,13 +576,13 @@ function fillPlayer(player, nr, side, max) {
             $(".left_series").find(".block").css("border-color", "rgba(" + dark_ct_color + " ,1)");
             $(".left_series").find(".win").css("background", "rgba(" + ct_color + ", 1)");
             $(".left_series").find(".win").css("box-shadow", "rgba(" + dark_ct_color + ", 1) 0px 0px 15px 3px");
-            $(".players_left_container>.player_container").css("background", "linear-gradient(to right, rgba(" + dark_ct_color + ", 0.85) 100%, transparent 100%)");
+            $(".players_left_container>.player_container").css("background-image", "url(../../files/img/hud_elements/back.png)");
         } else {
             health_color = "linear-gradient(90deg, rgba(" + t_color + ", 0.3) 0px, rgba(" + t_color + ", 0.9) 143px, rgba(" + t_color + ", 1) 330px)";
             $(".left_series").find(".block").css("border-color", "rgba(" + dark_t_color + ",1)");
             $(".left_series").find(".win").css("background", "rgba(" + t_color + ",1)");
             $(".left_series").find(".win").css("box-shadow", "rgba(" + dark_t_color + ",1) 0px 0px 15px 3px");
-            $(".players_left_container>.player_container").css("background", "linear-gradient(to right, rgba(" + dark_t_color + ", 0.85) 100%, transparent 100%)");
+            $(".players_left_container>.player_container").css("background-image", "url(../../files/img/hud_elements/back.png)");
         }
     }
 
@@ -1294,7 +1307,7 @@ function updatePage(data) {
     $(".right_bonus>.bonus_text>.real_text").html("<font color='#fff'> LOSS BONUS </font>");
     $(".right_bonus>.bonus_text").css("background", "rgba(" + right_color + ", 0.8)");
     $(".right_bonus").css("border", "solid 2px rgb(" + right_color + ")");
-    $(".right_bonus").css("background", "rgba(" + dark_right_color + ", 0.9)");
+    $(".right_bonus").css("background-image", "url(../../files/img/hud_elements/back.png)");
     $(".right_bonus>.bonus_box_1").css("border", "solid 2px rgb(" + right_color + ")");
     $(".right_bonus>.bonus_box_2").css("border", "solid 2px rgb(" + right_color + ")");
     $(".right_bonus>.bonus_box_3").css("border", "solid 2px rgb(" + right_color + ")");
@@ -1354,7 +1367,7 @@ function updatePage(data) {
     $(".left_bonus>.bonus_text>.real_text").html("<font color='#fff'> LOSS BONUS </font>");
     $(".left_bonus>.bonus_text").css("background", "rgba(" + left_color + ", 0.8)");
     $(".left_bonus").css("border", "solid 2px rgb(" + left_color + ")");
-    $(".left_bonus").css("background", "rgba(" + dark_left_color + ", 0.9)");
+    $(".left_bonus").css("background-image", "url(../../files/img/hud_elements/back_left.png)");
     $(".left_bonus>.bonus_box_1").css("border", "solid 2px rgb(" + left_color + ")");
     $(".left_bonus>.bonus_box_2").css("border", "solid 2px rgb(" + left_color + ")");
     $(".left_bonus>.bonus_box_3").css("border", "solid 2px rgb(" + left_color + ")");
@@ -1601,11 +1614,11 @@ function updatePage(data) {
     $(".alerts_container > .left > .progress_2").css("background-color", "rgb(" + left_color + ")");
     $(".alerts_container > .left > .progress_2").css("box-shadow", "0px 0px 30px 6px rgb(" + left_color + ")");
     $(".alerts_container > .left > .text").css("color", "rgb(" + left_color + ")");
-    $(".alerts_container > .left > .background").css("background", "rgba(" + dark_left_color + ", 0.85)");
+    $(".alerts_container > .left > .background").css("background-image", "url(../../files/img/hud_elements/back_left.png)");
     $(".left_name").css("color", "rgb(" + left_color + ")");
     $(".left_score").css("color", "rgb(" + left_color + ")");
     $(".player_count_left").css("color", "rgb(255,255,255)");
-    $(".player_count_left").css("background", "rgba(" + dark_left_color + ", 0.85)");
+    $(".player_count_left").css("background-image", "url(../../files/img/hud_elements/back_left.png)");
     $(".player_count_left").css("border", "solid 2px rgb(" + left_color + ")");
     $(".player_count_left").css("box-shadow", "inset 0px 0px 20px 5px rgb(" + left_color + ")");
 
@@ -1617,7 +1630,7 @@ function updatePage(data) {
     var left_gradient_spam = "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(" + left_color + ", 0.2) 35%, rgba(" + left_color + ", 0.2) 65%, rgba(0, 0, 0, 0) 100%)";
 
     $(".spam > .left_container").css("border", "2.5px solid rgb(" + left_color + ")");
-    $(".spam > .left_container").css("background", "rgba(" + dark_left_color + ", 0.85)");
+    $(".spam > .left_container").css("background-image", "url(../../files/img/hud_elements/back_left.png)");
     $(".spam > .left_container > .flash_container").css("background", left_gradient_spam);
     $(".spam > .left_container > .he_container").css("background", left_gradient_spam);
     $(".spam > .left_container > .molo_container").css("background", left_gradient_spam);
@@ -1629,17 +1642,17 @@ function updatePage(data) {
     $(".alerts_container > .right > .progress_2").css("background-color", "rgb(" + right_color + ")");
     $(".alerts_container > .right > .progress").css("box-shadow", "0px 0px 30px 6px rgb(" + right_color + ")");
     $(".alerts_container > .right > .progress_2").css("box-shadow", "0px 0px 30px 6px rgb(" + right_color + ")");
-    $(".alerts_container > .right > .background").css("background", "rgba(" + dark_right_color + ", 0.85)");
+    $(".alerts_container > .right > .background").css("background-image", "url(../../files/img/hud_elements/back.png)");
     $(".alerts_container > .right > .text").css("color", "rgb(" + right_color + ")");
     $(".right_name").css("color", "rgb(" + right_color + ")");
     $(".right_score").css("color", "rgb(" + right_color + ")");
     $(".player_count_right").css("color", "rgb(255,255,255)");
-    $(".player_count_right").css("background", "rgb(" + dark_right_color + ", 0.85)");
+    $(".player_count_right").css("background-image", "url(../../files/img/hud_elements/back.png)");
     $(".player_count_right").css("border", "solid 2px rgb(" + right_color + ")");
     $(".player_count_right").css("box-shadow", "inset 0px 0px 20px 5px rgb(" + right_color + ")");
 
 
-    $(".spam > .right_container").css("background", "rgba(" + dark_right_color + ", 0.85)");
+    $(".spam > .right_container").css("background-image", "url(../../files/img/hud_elements/back.png)");
     $(".firepower > .right").css("background-color", "rgba(0, 0, 0 ,0.6)");
     $(".firepower > .right").css("box-shadow", "inset 0px 0px 13px 5px  rgba(" + right_color + ", 0.9)");
 
