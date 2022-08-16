@@ -166,7 +166,7 @@ function fillObserved(player) {
         $(".observed_container>.observed_bar>.kda_container>.assists>.a").css("color", "rgb(" + ct_color + ")");
         $(".observed_container>.observed_bar>.kda_container>.deaths>.d").css("color", "rgb(" + ct_color + ")");
         $(".observed_container>.health").css("color", "rgb(" + ct_color + ")");
-        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(65, 65, 65) 0%, rgb(" + ct_color + ") 200px, rgb(" + ct_color + ") 100%");
+        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(25, 5, 25) 0%, rgb(" + ct_color + ") 150px, rgb(" + ct_color + ") 100%");
         $(".observed_container>.life_container>.life_bar").css("width", statistics.health + "%");
         $(".observed_container>.bomb_defuse").html(statistics.defusekit ? $("<img width='25px' />").attr("src", "/files/img/elements/defuse.png") : "");
         //$(".observed_container>.name").css("color", "rgb(" + ct_color + ")");
@@ -187,7 +187,7 @@ function fillObserved(player) {
         $(".observed_container>.observed_bar>.kda_container>.assists>.a").css("color", "rgb(" + ct_color + ")");
         $(".observed_container>.observed_bar>.kda_container>.deaths>.d").css("color", "rgb(" + ct_color + ")");
         $(".observed_container>.health").css("color", "rgb(" + ct_color + ")");
-        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(" + ct_color + ") 200px, rgb(" + ct_color + ") 100%");
+        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(25, 5, 25)(40, 40, 40) 0%, rgb(" + ct_color + ") 150px, rgb(" + ct_color + ") 100%");
         $(".observed_container>.life_container>.life_bar").css("width", statistics.health + "%");
         $(".observed_container>.bomb_defuse").html(statistics.defusekit ? $("<img width='25px' />").attr("src", "/files/img/elements/defuse.png") : "");
         //$(".observed_container>.name").css("color", "rgb(" + ct_color + ")");
@@ -208,7 +208,7 @@ function fillObserved(player) {
         $(".observed_container>.observed_bar>.kda_container>.kills>.k").css("color", "rgb(" + t_color + ")");
         $(".observed_container>.observed_bar>.kda_container>.assists>.a").css("color", "rgb(" + t_color + ")");
         $(".observed_container>.observed_bar>.kda_container>.deaths>.d").css("color", "rgb(" + t_color + ")");
-        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(" + t_color + ") 200px, rgb(" + t_color + ") 100%");
+        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(25, 5, 25) 0%, rgb(" + t_color + ") 150px, rgb(" + t_color + ") 100%");
         $(".observed_container>.life_container>.life_bar").css("width", statistics.health + "%");
         //$(".observed_container>.name").css("color", "rgb(" + t_color + ")");
         $(".observed_container>.health").css("color", "rgb(" + t_color + ")");
@@ -228,7 +228,7 @@ function fillObserved(player) {
         $(".observed_container>.observed_bar>.kda_container>.kills>.k").css("color", "rgb(" + t_color + ")");
         $(".observed_container>.observed_bar>.kda_container>.assists>.a").css("color", "rgb(" + t_color + ")");
         $(".observed_container>.observed_bar>.kda_container>.deaths>.d").css("color", "rgb(" + t_color + ")");
-        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(" + t_color + ") 200px, rgb(" + t_color + ") 100%");
+        $(".observed_container>.life_container>.life_bar").css("background", "linear-gradient(90deg, rgb(25, 5, 25) 0%, rgb(" + t_color + ") 150px, rgb(" + t_color + ") 100%");
         $(".observed_container>.life_container>.life_bar").css("width", statistics.health + "%");
         $(".observed_container>.bomb_defuse").html(statistics.bomb ? $("<img width='25px' />").attr("src", "/files/img/elements/defuse.png") : "");
         $(".observed_container>.health").css("color", "rgb(" + t_color + ")");

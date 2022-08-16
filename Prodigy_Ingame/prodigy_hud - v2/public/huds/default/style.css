@@ -176,13 +176,13 @@ sub {
     top: 0px;
     width: 500px;
     height: 70px;
-    font-size: 40px;
+    font-size: 35px;
     z-index: 2;
-    line-height: 1.7;
+    line-height: 2.05;
     color: rgb(255 255 255);
     text-align: center;
-    font-family: "Bebas Neue Pro";
-    font-weight: 800;
+    font-family: 'Edo SZ';
+    /* font-weight: 600; */
     transform: translateY(-50px);
 }
 
@@ -875,20 +875,19 @@ sub {
 }
 
 .alerts_container>.left>.text {
-    font-size: 18px;
-    font-family: "Eurostile Extended";
+    font-size: 30px;
+    font-family: "Bebas Neue Pro";
     color: #fff;
-    font-weight: bold;
+    font-weight: 900;
     text-transform: uppercase;
-    line-height: 3.3;
-    text-align: left;
+    line-height: 1.65;
     position: absolute;
+    letter-spacing: 1;
+    top: 4px;
     left: 50px;
-    top: 0px;
     width: 320px;
     height: 60px;
     z-index: 35;
-    letter-spacing: -1;
 }
 
 .alerts_container>.left>.icon {
@@ -969,20 +968,20 @@ sub {
 }
 
 .alerts_container>.right>.text {
-    font-size: 28px;
+    font-size: 30px;
     font-family: "Bebas Neue Pro";
     color: #fff;
     font-weight: 900;
     text-transform: uppercase;
-    line-height: 2.1;
-    text-align: right;
+    line-height: 1.65;
     position: absolute;
+    letter-spacing: 1;
+    top: 4px;
+    text-align: right;
     right: 50px;
-    top: 0px;
     width: 320px;
     height: 60px;
     z-index: 35;
-    letter-spacing: 0.6;
 }
 
 .alerts_container>.right>.icon {
@@ -1259,8 +1258,8 @@ sub {
     position: absolute;
     width: 140px;
     height: 25px;
-    left: 400px;
-    top: 103px;
+    left: 405px;
+    top: 104px;
     float: right;
     justify-content: flex-start;
     display: inline-flex;
@@ -1446,16 +1445,16 @@ sub {
     width: 18px;
     height: 18px;
     left: -12px;
-    top: 35px;
+    top: 34px;
     background: #fff;
     position: absolute;
     text-align: center;
     color: #031023;
-    font-size: 16px;
-    font-family: "Industry Inc Base";
+    font-size: 19px;
+    font-family: "Edo SZ";
     z-index: 100;
-    font-weight: 800;
-    line-height: 1.05;
+    font-weight: 700;
+    line-height: 0.9;
     z-index: 314;
 }
 
@@ -1562,13 +1561,14 @@ sub {
 }
 
 .players_left_container>.player_container>.top_bar>.player_name {
-    font-size: 16px;
-    font-family: "Industry Inc Base";
+    font-size: 22px;
+    font-family: 'Bebas Neue Pro';
     color: rgb(255, 255, 255);
-    /* font-weight: bold; */
+    font-weight: bold;
     text-transform: uppercase;
-    line-height: 1.6;
+    line-height: 1.3;
     text-align: left;
+    letter-spacing: 1.1;
     position: absolute;
     left: 72px;
     top: 0px;
@@ -1675,9 +1675,10 @@ sub {
 
 .players_left_container>.player_container>.bottom_bar>.moneys {
     font-size: 16px;
-    font-family: "Industry Inc Base";
+    font-family: 'HelveticaNowDisplay';
     /* font-weight: bold; */
     color: #9ef8df;
+    font-weight: 900;
     text-transform: uppercase;
     line-height: 1.3;
     text-align: left;
@@ -1717,30 +1718,34 @@ sub {
 }
 
 .players_left_container>.player_container>.bottom_bar>.k {
-    font-size: 16px;
-    font-family: "Industry Inc Base";
+    font-size: 22px;
+    font-family: 'Bebas Neue Pro';
     color: rgb(255 255 255);
     text-transform: uppercase;
-    line-height: 1.4;
+    font-weight: bolder;
+    letter-spacing: 1;
+    line-height: 1.45;
     text-align: left;
     position: absolute;
     left: 32px;
-    top: 29px;
+    top: 24px;
     z-index: 283;
     height: 20px;
     width: 45px;
 }
 
 .players_left_container>.player_container>.bottom_bar>.d {
-    font-size: 16px;
-    font-family: "Industry Inc Base";
+    font-size: 22px;
+    font-family: 'Bebas Neue Pro';
     color: rgb(255 255 255);
     text-transform: uppercase;
-    line-height: 1.4;
+    font-weight: bolder;
+    letter-spacing: 1;
+    line-height: 1.45;
     text-align: left;
     position: absolute;
+    top: 24px;
     left: 95px;
-    top: 29px;
     z-index: 283;
     height: 20px;
     width: 25px;
@@ -1753,16 +1758,16 @@ sub {
     width: 18px;
     height: 18px;
     right: -12px;
-    top: 35px;
+    top: 34px;
     background: #fff;
     position: absolute;
     text-align: center;
     color: #031023;
-    font-size: 16px;
-    font-family: "Industry Inc Base";
+    font-size: 19px;
+    font-family: "Edo SZ";
     z-index: 100;
-    font-weight: 800;
-    line-height: 1.05;
+    font-weight: 700;
+    line-height: 0.9;
     z-index: 314;
 }
 
@@ -1870,13 +1875,14 @@ sub {
 }
 
 .players_right_container>.player_container>.top_bar>.player_name {
-    font-size: 16px;
-    font-family: "Industry Inc Base";
+    font-size: 22px;
+    font-family: 'Bebas Neue Pro';
     color: rgb(255, 255, 255);
-    /* font-weight: bold; */
+    font-weight: bold;
     text-transform: uppercase;
-    line-height: 1.6;
+    line-height: 1.3;
     text-align: right;
+    letter-spacing: 1.1;
     position: absolute;
     right: 72px;
     top: 0px;
@@ -1986,9 +1992,10 @@ sub {
 
 .players_right_container>.player_container>.bottom_bar>.moneys {
     font-size: 16px;
-    font-family: "Industry Inc Base";
+    font-family: 'HelveticaNowDisplay';
     /* font-weight: bold; */
     color: #9ef8df;
+    font-weight: 900;
     text-transform: uppercase;
     line-height: 1.3;
     text-align: right;
@@ -2028,30 +2035,34 @@ sub {
 }
 
 .players_right_container>.player_container>.bottom_bar>.k {
-    font-size: 16px;
-    font-family: "Industry Inc Base";
+    font-size: 22px;
+    font-family: 'Bebas Neue Pro';
     color: rgb(255 255 255);
     text-transform: uppercase;
-    line-height: 1.4;
+    font-weight: bolder;
+    letter-spacing: 1;
+    line-height: 1.45;
     text-align: right;
     position: absolute;
+    top: 24px;
     right: 95px;
-    top: 29px;
     z-index: 283;
     height: 20px;
     width: 45px;
 }
 
 .players_right_container>.player_container>.bottom_bar>.d {
-    font-size: 16px;
-    font-family: "Industry Inc Base";
+    font-size: 22px;
+    font-family: 'Bebas Neue Pro';
     color: rgb(255 255 255);
     text-transform: uppercase;
-    line-height: 1.4;
+    font-weight: bolder;
+    letter-spacing: 1;
+    line-height: 1.45;
     text-align: right;
     position: absolute;
+    top: 24px;
     right: 32px;
-    top: 29px;
     z-index: 283;
     height: 20px;
     width: 25px;
@@ -2138,12 +2149,13 @@ sub {
     font-family: 'Bebas Neue Pro';
     color: rgb(255 255 255);
     text-transform: initial;
+    letter-spacing: 1;
     font-weight: 900;
     line-height: 1;
     text-transform: uppercase;
     text-align: left;
     position: absolute;
-    right: 0px;
+    right: 5px;
     top: 11px;
     z-index: 283;
     height: 30px;
@@ -2175,12 +2187,13 @@ sub {
     font-family: 'Bebas Neue Pro';
     color: rgb(255 255 255);
     text-transform: initial;
+    letter-spacing: 1;
     font-weight: 900;
     line-height: 1;
     text-transform: uppercase;
     text-align: left;
     position: absolute;
-    right: 0px;
+    right: 5px;
     top: 11px;
     z-index: 283;
     height: 30px;
@@ -2212,12 +2225,13 @@ sub {
     font-family: 'Bebas Neue Pro';
     color: rgb(255 255 255);
     text-transform: initial;
+    letter-spacing: 1;
     font-weight: 900;
     line-height: 1;
     text-transform: uppercase;
     text-align: left;
     position: absolute;
-    right: 0px;
+    right: 5px;
     top: 11px;
     z-index: 283;
     height: 30px;
@@ -2249,12 +2263,13 @@ sub {
     font-family: 'Bebas Neue Pro';
     color: rgb(255 255 255);
     text-transform: initial;
+    letter-spacing: 1;
     font-weight: 900;
     line-height: 1;
     text-transform: uppercase;
     text-align: left;
     position: absolute;
-    right: 0px;
+    right: 5px;
     top: 11px;
     z-index: 283;
     height: 30px;
@@ -2338,11 +2353,12 @@ sub {
     color: rgb(255 255 255);
     text-transform: initial;
     font-weight: 900;
+    letter-spacing: 1;
     line-height: 1;
     text-transform: uppercase;
     text-align: left;
     position: absolute;
-    right: 0px;
+    right: 5px;
     top: 11px;
     z-index: 283;
     height: 30px;
@@ -2373,6 +2389,7 @@ sub {
     font-size: 26px;
     font-family: 'Bebas Neue Pro';
     color: rgb(255 255 255);
+    letter-spacing: 1;
     text-transform: initial;
     font-weight: 900;
     line-height: 1;
@@ -2411,11 +2428,12 @@ sub {
     font-family: 'Bebas Neue Pro';
     color: rgb(255 255 255);
     text-transform: initial;
+    letter-spacing: 1;
     font-weight: 900;
     line-height: 1;
     text-transform: uppercase;
     position: absolute;
-    right: 0px;
+    right: 5px;
     top: 11px;
     z-index: 283;
     height: 30px;
@@ -2447,12 +2465,13 @@ sub {
     font-family: 'Bebas Neue Pro';
     color: rgb(255 255 255);
     text-transform: initial;
+    letter-spacing: 1;
     font-weight: 900;
     line-height: 1;
     text-transform: uppercase;
     text-align: left;
     position: absolute;
-    right: 0px;
+    right: 5px;
     top: 11px;
     z-index: 283;
     height: 30px;
@@ -2546,6 +2565,16 @@ sub {
     height: 100%;
     z-index: 50;
     clip-path: polygon(1% 0, 115% 0, 100% 100%, 11% 100%);
+}
+
+.map_picks>.decider_map>.back {
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(1% 0, 115% 0, 100% 100%, 11% 100%);
+    background-image: url(../../files/img/hud_elements/back.png);
+    opacity: 0.4;
+    background-position: center;
+    background-size: 100%;
 }
 
 .map_picks>.first_map>.text_container {
@@ -5223,7 +5252,7 @@ sub {
 }
 
 .observed {
-    background-image: url(../../files/img/hud_elements/back.png) !important;
+    background: #fff !important;
     box-shadow: 0px 0px 21px 3px #fff;
 }
 
