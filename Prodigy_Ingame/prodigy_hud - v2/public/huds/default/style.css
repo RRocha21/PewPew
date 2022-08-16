@@ -656,14 +656,14 @@ sub {
 
 .header_container>.time {
     font-size: 32px;
-    font-family: "Industry Inc Base";
+    font-family: 'HELVETICANOWDISPLAY';
     color: rgb(255, 255, 255);
-    font-weight: bold;
+    font-weight: 800;
     text-transform: uppercase;
     line-height: 0.9;
     position: absolute;
     left: 451px;
-    top: 35px;
+    top: 42px;
     position: absolute;
     width: 100px;
     height: 40px;
@@ -811,7 +811,7 @@ sub {
 }
 
 .round_text {
-    font-size: 12px;
+    font-size: 14px;
     font-family: "HelveticaNowDisplay";
     font-weight: 700;
     color: #ffffff;
@@ -1070,9 +1070,18 @@ sub {
     width: 30%;
     height: 90%;
     background-color: #000;
-    background-image: url("../../files/img/hud_elements/caps_example.png");
-    background-size: contain;
+    /*background-image: url("../../files/img/hud_elements/caps_example.png");*/
+    background-size: 100%;
     background-repeat: no-repeat;
+    /*text-align: center;*/
+}
+
+.observed_container>.picture img {
+    margin-top: 5px;
+    margin-left: 10px;
+    display: block;
+    width: 130px;
+    height: 130px;
 }
 
 
@@ -1211,13 +1220,14 @@ sub {
 /** OBSERVED - NADES, HEALTH, ARMOR **/
 
 .observed_container>.name {
-    font-size: 28px;
-    font-family: "HelveticaNowDisplay";
+    font-size: 30px;
+    font-family: 'BEBAS NEUE PRO';
     color: rgb(255, 255, 255);
     font-weight: 800;
     position: absolute;
+    letter-spacing: 1.7;
     right: 95px;
-    top: 0px;
+    top: -4px;
     width: 240px;
     height: 66px;
     z-index: 65;
@@ -1228,17 +1238,18 @@ sub {
 }
 
 .observed_container>.bullets {
-    font-size: 21px;
+    font-size: 25px;
     font-family: "HelveticaNowDisplay";
     color: rgb(255, 255, 255);
-    font-weight: 800;
+    font-weight: 700;
     position: absolute;
+    letter-spacing: 2;
     width: 70px;
     height: 60px;
     z-index: 61;
-    line-height: 2.3;
-    top: 95px;
-    left: 312px;
+    line-height: 2.4;
+    top: 89px;
+    left: 308px;
     text-align: left;
     /* direction: rtl; */
 }
@@ -1278,13 +1289,13 @@ sub {
 }
 
 .observed_container>.bullets_icon {
-    background-image: url("/files/img/bullets_ct.png");
+    background-image: url("/files/img/bullets.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
     left: 274px;
-    top: 103px;
+    top: 104px;
     width: 25px;
     height: 25px;
     z-index: 170;
@@ -1300,27 +1311,31 @@ sub {
 }
 
 .observed_container>.health {
-    font-size: 22px;
-    font-family: "Akira Expanded";
+    font-size: 26px;
+    font-family: 'Edo SZ';
     color: rgb(255, 255, 255);
     position: absolute;
+    font-weight: 900;
+    letter-spacing: 3;
     left: 185px;
-    top: 63px;
+    top: 61px;
     width: 45px;
     text-overflow: clip;
     text-align: left;
     z-index: 57;
-    line-height: 1.3;
+    line-height: 1.15;
 }
 
 .observed_container>.armor {
     font-size: 25px;
-    font-family: "Industry Inc Base";
+    font-family: "HelveticaNowDisplay";
     color: rgb(255, 255, 255);
     position: absolute;
+    letter-spacing: 2;
+    font-weight: 700;
     left: 214px;
-    top: 98px;
-    width: 45px;
+    top: 102px;
+    width: 50px;
     overflow: hidden;
     text-overflow: clip;
     text-align: left;
@@ -1581,20 +1596,20 @@ sub {
 }
 
 .players_left_container>.player_container>.top_bar>.health_text {
-    font-size: 19px;
-    font-family: "Akira Expanded";
+    font-size: 24px;
+    font-family: 'Edo SZ';
     color: rgb(255, 255, 255);
-    font-weight: bold;
+    font-weight: 900;
     text-transform: uppercase;
-    line-height: 1.45;
+    line-height: 1.2;
     text-align: left;
     position: absolute;
     left: 10px;
-    top: 1px;
+    top: 0px;
     z-index: 283;
     height: 27px;
     width: 55px;
-    letter-spacing: 2;
+    letter-spacing: 3;
 }
 
 .players_left_container>.player_container>.top_bar>.weapon_icon {
@@ -1889,20 +1904,20 @@ sub {
 }
 
 .players_right_container>.player_container>.top_bar>.health_text {
-    font-size: 19px;
-    font-family: "Akira Expanded";
+    font-size: 24px;
+    font-family: 'Edo SZ';
     color: rgb(255, 255, 255);
-    font-weight: bold;
+    font-weight: 900;
     text-transform: uppercase;
-    line-height: 1.45;
+    line-height: 1.2;
     text-align: right;
     position: absolute;
     right: 10px;
-    top: 1px;
+    top: 0px;
     z-index: 283;
     height: 27px;
     width: 55px;
-    letter-spacing: 2;
+    letter-spacing: 3;
 }
 
 .players_right_container>.player_container>.top_bar>.weapon_icon {
@@ -2119,15 +2134,17 @@ sub {
 }
 
 .spam>.left_container>.flash_container>.count {
-    font-size: 20px;
-    font-family: "Industry Inc Base";
+    font-size: 26px;
+    font-family: 'Bebas Neue Pro';
     color: rgb(255 255 255);
     text-transform: initial;
-    line-height: 1.2;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
     text-align: left;
     position: absolute;
     right: 0px;
-    top: 10px;
+    top: 11px;
     z-index: 283;
     height: 30px;
     width: 39px;
@@ -2154,15 +2171,17 @@ sub {
 }
 
 .spam>.left_container>.he_container>.count {
-    font-size: 20px;
-    font-family: "Industry Inc Base";
+    font-size: 26px;
+    font-family: 'Bebas Neue Pro';
     color: rgb(255 255 255);
     text-transform: initial;
-    line-height: 1.2;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
     text-align: left;
     position: absolute;
     right: 0px;
-    top: 10px;
+    top: 11px;
     z-index: 283;
     height: 30px;
     width: 39px;
@@ -2189,15 +2208,17 @@ sub {
 }
 
 .spam>.left_container>.smoke_container>.count {
-    font-size: 20px;
-    font-family: "Industry Inc Base";
+    font-size: 26px;
+    font-family: 'Bebas Neue Pro';
     color: rgb(255 255 255);
     text-transform: initial;
-    line-height: 1.2;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
     text-align: left;
     position: absolute;
     right: 0px;
-    top: 10px;
+    top: 11px;
     z-index: 283;
     height: 30px;
     width: 39px;
@@ -2224,15 +2245,17 @@ sub {
 }
 
 .spam>.left_container>.molo_container>.count {
-    font-size: 20px;
-    font-family: "Industry Inc Base";
+    font-size: 26px;
+    font-family: 'Bebas Neue Pro';
     color: rgb(255 255 255);
     text-transform: initial;
-    line-height: 1.2;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
     text-align: left;
     position: absolute;
     right: 0px;
-    top: 10px;
+    top: 11px;
     z-index: 283;
     height: 30px;
     width: 39px;
@@ -2310,15 +2333,17 @@ sub {
 }
 
 .spam>.right_container>.flash_container>.count {
-    font-size: 20px;
-    font-family: "Industry Inc Base";
+    font-size: 26px;
+    font-family: 'Bebas Neue Pro';
     color: rgb(255 255 255);
     text-transform: initial;
-    line-height: 1.2;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
     text-align: left;
     position: absolute;
     right: 0px;
-    top: 10px;
+    top: 11px;
     z-index: 283;
     height: 30px;
     width: 39px;
@@ -2345,15 +2370,17 @@ sub {
 }
 
 .spam>.right_container>.he_container>.count {
-    font-size: 20px;
-    font-family: "Industry Inc Base";
+    font-size: 26px;
+    font-family: 'Bebas Neue Pro';
     color: rgb(255 255 255);
     text-transform: initial;
-    line-height: 1.2;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
     text-align: left;
     position: absolute;
-    right: 0px;
-    top: 10px;
+    right: 5px;
+    top: 11px;
     z-index: 283;
     height: 30px;
     width: 39px;
@@ -2380,15 +2407,16 @@ sub {
 }
 
 .spam>.right_container>.smoke_container>.count {
-    font-size: 20px;
-    font-family: "Industry Inc Base";
+    font-size: 26px;
+    font-family: 'Bebas Neue Pro';
     color: rgb(255 255 255);
     text-transform: initial;
-    line-height: 1.2;
-    text-align: left;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
     position: absolute;
     right: 0px;
-    top: 10px;
+    top: 11px;
     z-index: 283;
     height: 30px;
     width: 39px;
@@ -2415,15 +2443,17 @@ sub {
 }
 
 .spam>.right_container>.molo_container>.count {
-    font-size: 20px;
-    font-family: "Industry Inc Base";
+    font-size: 26px;
+    font-family: 'Bebas Neue Pro';
     color: rgb(255 255 255);
     text-transform: initial;
-    line-height: 1.2;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
     text-align: left;
     position: absolute;
     right: 0px;
-    top: 10px;
+    top: 11px;
     z-index: 283;
     height: 30px;
     width: 39px;
@@ -2744,10 +2774,12 @@ sub {
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 21px;
-    font-weight: 700;
+    font-weight: 900;
+    letter-spacing: 1;
     font-family: "Bebas Neue Pro";
-    z-index: 102;
-    line-height: 1.0;
+    color: rgb(255, 255, 255);
+    z-index: 53;
+    line-height: 1;
 }
 
 .right_bonus>.bonus_box_1 {
@@ -2817,11 +2849,11 @@ sub {
     z-index: 101;
     text-align: center;
     color: rgb(254, 60, 199);
-    font-size: 26px;
+    font-size: 19px;
     font-weight: 800;
-    font-family: "Bebas Neue Pro";
+    font-family: 'HelveticaNowDisplay';
     z-index: 100;
-    line-height: 1.0;
+    line-height: 1.3;
     /*border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -2875,10 +2907,12 @@ sub {
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 21px;
-    font-weight: 700;
+    font-weight: 900;
+    letter-spacing: 1;
     font-family: "Bebas Neue Pro";
-    z-index: 102;
-    line-height: 1.0;
+    color: rgb(255, 255, 255);
+    z-index: 53;
+    line-height: 1;
 }
 
 .left_bonus>.bonus_box_1 {
@@ -2948,11 +2982,11 @@ sub {
     z-index: 101;
     text-align: center;
     color: rgb(254, 60, 199);
-    font-size: 26px;
+    font-size: 19px;
     font-weight: 800;
-    font-family: "Bebas Neue Pro";
+    font-family: 'HELVETICANOWDISPLAY';
     z-index: 100;
-    line-height: 1.0;
+    line-height: 1.3;
     /*border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -2998,15 +3032,16 @@ sub {
 
 .firepower_money_left>.equip_container>.text_money>.text_true {
     position: absolute;
-    top: 7px;
+    top: 6px;
     right: 0px;
     width: 100%;
     text-align: center;
     font-size: 21px;
+    font-weight: 900;
+    letter-spacing: 1;
     font-family: "Bebas Neue Pro";
-    font-weight: 700;
     color: rgb(255, 255, 255);
-    z-index: 4;
+    z-index: 53;
     line-height: 0.9;
 }
 
@@ -3048,15 +3083,16 @@ sub {
 
 .firepower_money_left>.team_container>.text_money>.text_true {
     position: absolute;
-    top: 7px;
+    top: 6px;
     right: 24px;
     width: 50%;
     text-align: center;
     font-size: 21px;
+    font-weight: 900;
+    letter-spacing: 1;
     font-family: "Bebas Neue Pro";
-    font-weight: 700;
     color: rgb(255, 255, 255);
-    z-index: 4;
+    z-index: 53;
     line-height: 0.9;
 }
 
@@ -3112,12 +3148,13 @@ sub {
 
 .firepower_money_right>.equip_container>.text_money>.text_true {
     position: absolute;
-    top: 7px;
+    top: 6px;
     right: 0px;
     width: 100%;
     text-align: center;
     font-size: 21px;
-    font-weight: 700;
+    font-weight: 900;
+    letter-spacing: 1;
     font-family: "Bebas Neue Pro";
     color: rgb(255, 255, 255);
     z-index: 53;
@@ -3162,12 +3199,13 @@ sub {
 
 .firepower_money_right>.team_container>.text_money>.text_true {
     position: absolute;
-    top: 7px;
+    top: 6px;
     right: 24px;
     width: 50%;
     text-align: center;
     font-size: 21px;
-    font-weight: 700;
+    font-weight: 900;
+    letter-spacing: 1;
     font-family: "Bebas Neue Pro";
     color: rgb(255, 255, 255);
     z-index: 53;

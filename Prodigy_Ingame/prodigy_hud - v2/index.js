@@ -134,7 +134,7 @@ app.get('/av/:sid([0-9]+)', (req, res) => {
             try {
                 data = JSON.parse(body).response;
                 if (data && data.players) {
-                    download("https://i.imgur.com/QmUfVQT.png", config.AvatarDirectory + filename, () => {
+                    download("https://i.imgur.com/AJnDg9f.png", config.AvatarDirectory + filename, () => {
                         let file = fs.readFileSync(filepath);
                         res.writeHead(200, {
                             'Content-Type': 'image/png',

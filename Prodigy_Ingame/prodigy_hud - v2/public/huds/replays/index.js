@@ -274,9 +274,9 @@ function fillObserved(player) {
 
 
 
-    /*loadAvatar(player.steamid, function() {
-        $(".picture").html($("<img width='150px' height='150px'/>").attr("src", "/av/" + player.steamid));
-    }); */
+    loadAvatar(player.steamid, function() {
+        $(".picture").html($("<img width='130px' height='130px'/>").attr("src", "/av/" + player.steamid));
+    });
 
 }
 
