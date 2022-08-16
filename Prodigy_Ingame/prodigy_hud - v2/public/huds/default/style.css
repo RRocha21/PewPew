@@ -2074,7 +2074,7 @@ sub {
 .spam>.left_container {
     background-image: url(../../files/img/hud_elements/back_left.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 101%;
     background-position: center;
     position: absolute;
     left: -214px;
@@ -2282,7 +2282,7 @@ sub {
 .spam>.right_container {
     background-image: url(../../files/img/hud_elements/back.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 101%;
     background-position: center;
     position: absolute;
     right: -214px;
